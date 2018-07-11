@@ -1,0 +1,11 @@
+https://garywoodfine.com/redis-inmemory-cache-asp-net-mvc-core/
+
+https://redisdesktop.com/download
+
+https://github.com/MicrosoftArchive/redis/releases
+
+// create class redis cache basic 
+
+http://patrickdesjardins.com/blog/using-redis-in-asp-net-in-an-enterprise-system
+
+http://patrickdesjardins.com/blog/integrating-redis-in-your-asp-net-mvc-project
