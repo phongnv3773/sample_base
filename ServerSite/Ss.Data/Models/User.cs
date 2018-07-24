@@ -1,4 +1,5 @@
 ﻿using Ss.Data.Enums;
+using Ss.Data.Models.Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -16,6 +17,8 @@ namespace Ss.Data.Models
         {
             Roles = new HashSet<Role>();
             GroupUsers = new HashSet<GroupUser>();
+            Orders = new HashSet<Order>();
+
         }
 
         public string UserName { get; set; }
@@ -25,5 +28,6 @@ namespace Ss.Data.Models
 
         public virtual ICollection<Role> Roles { get; set; }
         public virtual ICollection<GroupUser> GroupUsers { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

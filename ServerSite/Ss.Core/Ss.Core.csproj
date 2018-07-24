@@ -62,7 +62,9 @@
     <Compile Include="RedisCache\ICacheProvider.cs" />
     <Compile Include="RedisCache\RedisCacheProvider.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="NoteDocument\ecommerceSchema.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
