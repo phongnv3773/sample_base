@@ -51,6 +51,12 @@
     <Compile Include="Models\AccessControl\AccessPermission.cs" />
     <Compile Include="Models\AccessControl\Role.cs" />
     <Compile Include="Models\AccessControl\RoleAccessPermission.cs" />
+    <Compile Include="Models\Business\Category.cs" />
+    <Compile Include="Models\Business\Order.cs" />
+    <Compile Include="Models\Business\Order_detail.cs" />
+    <Compile Include="Models\Business\Product.cs" />
+    <Compile Include="Models\Business\Shipping_addres.cs" />
+    <Compile Include="Models\Business\Sub_category.cs" />
     <Compile Include="ModelViews\BaseViewEntity.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ModelViews\UserView.cs" />
