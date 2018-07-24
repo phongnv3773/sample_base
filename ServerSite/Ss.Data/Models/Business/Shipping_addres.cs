@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Ss.Data.Models.Business
 {
     [Table("Shipping_addres")]
-    public class Shipping_addres
+    public class Shipping_addres : BaseEntity
     {
         public Shipping_addres()
         {
