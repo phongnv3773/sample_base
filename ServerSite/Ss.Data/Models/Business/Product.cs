@@ -13,6 +13,7 @@ namespace Ss.Data.Models.Business
         public Product()
         {
             Order_details = new HashSet<Order_detail>();
+            Categorys = new HashSet<Category>();
         }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -22,5 +23,6 @@ namespace Ss.Data.Models.Business
         public string ImageDesc { get; set; }
         public int Ranking { get; set; }
         public virtual ICollection<Order_detail> Order_details { get; set; }
+        public virtual ICollection<Category> Categorys { get; set; }
     }
 }
