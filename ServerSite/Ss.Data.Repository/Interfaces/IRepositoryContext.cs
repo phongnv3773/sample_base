@@ -1,4 +1,5 @@
 ﻿using Ss.Data.Models;
+using Ss.Data.Models.Business;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,13 @@ namespace Ss.Data.Repository.Interfaces
         IRepository<User> UserRepository { get; }
         IRepository<AccessPermission> AccessPermissionRepository { get; }
         IRepository<RoleAccessPermission> RoleAccessPermissionRepository { get; }
+
+        IRepository<Category> CategoryRepository { get; }
+        IRepository<Order> OrderRepository { get; }
+        IRepository<OrderDetail> OrderDetailRepository { get; }
+        IRepository<Product> ProductRepository { get; }
+        IRepository<ShippingAddres> ShippingAddresRepository { get; }
+        IRepository<SubCategory> SubCategoryRepository { get; }
+
     }
 }

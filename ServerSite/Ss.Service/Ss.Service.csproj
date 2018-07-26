@@ -41,9 +41,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseService.cs" />
+    <Compile Include="CategoryService.cs" />
+    <Compile Include="Interfaces\Business\ICategoryService.cs" />
+    <Compile Include="Interfaces\Business\IOrderDetailService.cs" />
+    <Compile Include="Interfaces\Business\IProductService.cs" />
+    <Compile Include="Interfaces\Business\IShippingAddresService.cs" />
+    <Compile Include="Interfaces\Business\ISubCategoryService.cs" />
+    <Compile Include="Interfaces\IOrderService.cs" />
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
+    <Compile Include="OrderDetailService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShippingAddresService.cs" />
+    <Compile Include="SubCategoryService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>

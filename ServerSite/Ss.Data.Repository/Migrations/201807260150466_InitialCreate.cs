@@ -87,12 +87,12 @@ namespace Ss.Data.Repository.Migrations
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Users", t => t.Customer_Id, cascadeDelete: true)
-                .ForeignKey("dbo.Shipping_addres", t => t.Shipping_Id)
+                .ForeignKey("dbo.ShippingAddres", t => t.Shipping_Id)
                 .Index(t => t.Customer_Id)
                 .Index(t => t.Shipping_Id);
             
             CreateTable(
-                "dbo.Order_details",
+                "dbo.OrderDetails",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -142,7 +142,7 @@ namespace Ss.Data.Repository.Migrations
                 .Index(t => t.Product_Id);
             
             CreateTable(
-                "dbo.Sub_categorys",
+                "dbo.SubCategorys",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -156,7 +156,7 @@ namespace Ss.Data.Repository.Migrations
                 .Index(t => t.Category_Id);
             
             CreateTable(
-                "dbo.Shipping_addres",
+                "dbo.ShippingAddres",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -202,11 +202,11 @@ namespace Ss.Data.Repository.Migrations
             DropForeignKey("dbo.RoleAccessPermissions", "Role_Id", "dbo.Roles");
             DropForeignKey("dbo.UserRole", "Role_Id", "dbo.Roles");
             DropForeignKey("dbo.UserRole", "User_Id", "dbo.Users");
-            DropForeignKey("dbo.Orders", "Shipping_Id", "dbo.Shipping_addres");
-            DropForeignKey("dbo.Order_details", "ProductInfo_Id", "dbo.Products");
-            DropForeignKey("dbo.Sub_categorys", "Category_Id", "dbo.Categorys");
+            DropForeignKey("dbo.Orders", "Shipping_Id", "dbo.ShippingAddres");
+            DropForeignKey("dbo.OrderDetails", "ProductInfo_Id", "dbo.Products");
+            DropForeignKey("dbo.SubCategorys", "Category_Id", "dbo.Categorys");
             DropForeignKey("dbo.Categorys", "Product_Id", "dbo.Products");
-            DropForeignKey("dbo.Order_details", "OrderInfo_Id", "dbo.Orders");
+            DropForeignKey("dbo.OrderDetails", "OrderInfo_Id", "dbo.Orders");
             DropForeignKey("dbo.Orders", "Customer_Id", "dbo.Users");
             DropForeignKey("dbo.GroupUserUser", "User_Id", "dbo.Users");
             DropForeignKey("dbo.GroupUserUser", "GroupUser_Id", "dbo.GroupUsers");
@@ -216,10 +216,10 @@ namespace Ss.Data.Repository.Migrations
             DropIndex("dbo.UserRole", new[] { "User_Id" });
             DropIndex("dbo.GroupUserUser", new[] { "User_Id" });
             DropIndex("dbo.GroupUserUser", new[] { "GroupUser_Id" });
-            DropIndex("dbo.Sub_categorys", new[] { "Category_Id" });
+            DropIndex("dbo.SubCategorys", new[] { "Category_Id" });
             DropIndex("dbo.Categorys", new[] { "Product_Id" });
-            DropIndex("dbo.Order_details", new[] { "ProductInfo_Id" });
-            DropIndex("dbo.Order_details", new[] { "OrderInfo_Id" });
+            DropIndex("dbo.OrderDetails", new[] { "ProductInfo_Id" });
+            DropIndex("dbo.OrderDetails", new[] { "OrderInfo_Id" });
             DropIndex("dbo.Orders", new[] { "Shipping_Id" });
             DropIndex("dbo.Orders", new[] { "Customer_Id" });
             DropIndex("dbo.GroupUsers", new[] { "GroupUserParent_Id" });
@@ -227,11 +227,11 @@ namespace Ss.Data.Repository.Migrations
             DropIndex("dbo.RoleAccessPermissions", new[] { "AccessPermission_Id" });
             DropTable("dbo.UserRole");
             DropTable("dbo.GroupUserUser");
-            DropTable("dbo.Shipping_addres");
-            DropTable("dbo.Sub_categorys");
+            DropTable("dbo.ShippingAddres");
+            DropTable("dbo.SubCategorys");
             DropTable("dbo.Categorys");
             DropTable("dbo.Products");
-            DropTable("dbo.Order_details");
+            DropTable("dbo.OrderDetails");
             DropTable("dbo.Orders");
             DropTable("dbo.GroupUsers");
             DropTable("dbo.Users");

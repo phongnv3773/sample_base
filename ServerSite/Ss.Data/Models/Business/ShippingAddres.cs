@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Ss.Data.Models.Business
 {
-    [Table("Shipping_addres")]
-    public class Shipping_addres : BaseEntity
+    [Table("ShippingAddres")]
+    public class ShippingAddres : BaseEntity
     {
-        public Shipping_addres()
+        public ShippingAddres()
         {
             Orders = new HashSet<Order>();
         }

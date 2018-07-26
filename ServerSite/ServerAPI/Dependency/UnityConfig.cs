@@ -5,6 +5,7 @@ using Ss.Data.Repository;
 using Ss.Data.Repository.Interfaces;
 using Ss.Service;
 using Ss.Service.Interfaces;
+using Ss.Service.Interfaces.Business;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -135,6 +136,16 @@ namespace ServerAPI.Dependency
             #region Register Services
 
             container.RegisterType<IUserService, UserService>();
+
+            #region Handle Business
+
+            container.RegisterType<ICategoryService, CategoryService>();
+            container.RegisterType<IOrderDetailService, OrderDetailService>();
+            container.RegisterType<IProductService, ProductService>();
+            container.RegisterType<IShippingAddresService, ShippingAddresService>();
+            container.RegisterType<ISubCategoryService, SubCategoryService>();
+
+            #endregion
 
             #endregion
 

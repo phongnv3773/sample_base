@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Ss.Data.Models.Business
 {
-    [Table("Order_details")]
-    public class Order_detail : BaseEntity
+    [Table("OrderDetails")]
+    public class OrderDetail : BaseEntity
     {
         public virtual Order OrderInfo { get; set; }
         public virtual Product ProductInfo { get; set; }

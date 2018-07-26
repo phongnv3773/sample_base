@@ -12,11 +12,11 @@ namespace Ss.Data.Models.Business
     {
         public Category()
         {
-            Sub_categorys = new HashSet<Sub_category>();
+            Sub_categorys = new HashSet<SubCategory>();
         }
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<Sub_category> Sub_categorys { get; set; }
+        public virtual ICollection<SubCategory> Sub_categorys { get; set; }
         public virtual Product Product { get; set; }
     }
 }

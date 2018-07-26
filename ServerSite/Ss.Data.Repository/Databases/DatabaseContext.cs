@@ -23,10 +23,10 @@ namespace Ss.Data.Repository
         public virtual DbSet<RoleAccessPermission> RoleAccessPermissions { get; set; }
         public virtual DbSet<GroupUser> GroupUsers { get; set; }
 
-        public virtual DbSet<Sub_category> Sub_categorys { get; set; }
+        public virtual DbSet<SubCategory> Sub_categorys { get; set; }
         public virtual DbSet<Category> Categorys { get; set; }
-        public virtual DbSet<Shipping_addres> Shipping_addres { get; set; }
-        public virtual DbSet<Order_detail> Order_details { get; set; }
+        public virtual DbSet<ShippingAddres> Shipping_addres { get; set; }
+        public virtual DbSet<OrderDetail> Order_details { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
 
