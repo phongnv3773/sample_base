@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Ss.Data.Models.Business
 {
-    [Table("Sub_categorys")]
-    public class Sub_category : BaseEntity
+    [Table("SubCategorys")]
+    public class SubCategory : BaseEntity
     {
         public string Name { get; set; }
         public string Description { get; set; }

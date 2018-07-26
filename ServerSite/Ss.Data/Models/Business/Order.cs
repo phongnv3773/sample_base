@@ -13,12 +13,12 @@ namespace Ss.Data.Models.Business
     {
         public Order()
         {
-            Order_details = new HashSet<Order_detail>();
+            Order_details = new HashSet<OrderDetail>();
         }
 
         [Required]
         public virtual User Customer { get; set; }
-        public virtual Shipping_addres Shipping { get; set; }
+        public virtual ShippingAddres Shipping { get; set; }
 
         public double Total { get; set; }
         public int Discount { get; set; }
@@ -26,6 +26,6 @@ namespace Ss.Data.Models.Business
         public string Tax { get; set; }
         public double GrandTotal { get; set; }
 
-        public virtual ICollection<Order_detail> Order_details { get; set; }
+        public virtual ICollection<OrderDetail> Order_details { get; set; }
     }
 }

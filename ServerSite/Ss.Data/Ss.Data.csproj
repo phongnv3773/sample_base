@@ -53,12 +53,18 @@
     <Compile Include="Models\AccessControl\RoleAccessPermission.cs" />
     <Compile Include="Models\Business\Category.cs" />
     <Compile Include="Models\Business\Order.cs" />
-    <Compile Include="Models\Business\Order_detail.cs" />
+    <Compile Include="Models\Business\OrderDetail.cs" />
     <Compile Include="Models\Business\Product.cs" />
-    <Compile Include="Models\Business\Shipping_addres.cs" />
-    <Compile Include="Models\Business\Sub_category.cs" />
+    <Compile Include="Models\Business\ShippingAddres.cs" />
+    <Compile Include="Models\Business\SubCategory.cs" />
     <Compile Include="ModelViews\BaseViewEntity.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="ModelViews\Business\CategoryView.cs" />
+    <Compile Include="ModelViews\Business\OrderDetailView.cs" />
+    <Compile Include="ModelViews\Business\OrderView.cs" />
+    <Compile Include="ModelViews\Business\ProductView.cs" />
+    <Compile Include="ModelViews\Business\ShippingAddresView.cs" />
+    <Compile Include="ModelViews\Business\SubCategoryView.cs" />
     <Compile Include="ModelViews\UserView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
